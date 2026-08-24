@@ -112,7 +112,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>🛠️ Admin Dashboard</strong></summary>
+<summary><strong> Admin Dashboard</strong></summary>
 
 <br />
 
@@ -177,7 +177,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>✉️ Email System</strong></summary>
+<summary><strong> Email System</strong></summary>
 
 <br />
 
