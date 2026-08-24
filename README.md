@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏢 Society Maintenance Tracker
+# Society Maintenance Tracker
 
 ### The modern, production-grade platform for apartment & society complaint management
 
@@ -29,11 +29,11 @@ Built with a premium SaaS-grade UI/UX inspired by Linear, Notion, and the Vercel
 </div>
 
 ---
-## 🖼️ Project Preview
+## Project Preview
 
 <div align="center">
 
-### 📊 Dashboard
+### Dashboard
 
 ![Dashboard Screenshot](./docs/screenshots/dashboard.png)
 
@@ -53,24 +53,24 @@ Built with a premium SaaS-grade UI/UX inspired by Linear, Notion, and the Vercel
 
 ---
 
-## 📖 About the Project
+## About the Project
 
 **Society Maintenance Tracker** solves a problem every apartment complex knows well: maintenance complaints get lost in WhatsApp groups, phone calls, and paper registers.
 
 This platform gives **Residents** a clean, guided way to raise a complaint — with photos, category, and priority — and track its entire lifecycle from submission to resolution. **Admins** get a powerful control center to triage, assign, prioritize, and resolve every complaint in the society, with nothing slipping through the cracks.
 
-> 🔁 **Complaint Lifecycle** — every complaint moves through a fully-audited state machine (`Open → In Progress → Resolved → Closed`, with automatic `Overdue` escalation), and every single transition is permanently recorded in a timeline.
+> **Complaint Lifecycle** — every complaint moves through a fully-audited state machine (`Open → In Progress → Resolved → Closed`, with automatic `Overdue` escalation), and every single transition is permanently recorded in a timeline.
 >
-> 🤖 **Automation** — a background cron job continuously scans for complaints that have breached their configurable SLA and flags them as overdue, no manual intervention required.
+> **Automation** — a background cron job continuously scans for complaints that have breached their configurable SLA and flags them as overdue, no manual intervention required.
 >
-> 🔔 **Notifications** — residents and admins are kept in the loop through in-app notifications and branded HTML emails at every key milestone.
+> **Notifications** — residents and admins are kept in the loop through in-app notifications and branded HTML emails at every key milestone.
 >
-> 📊 **Analytics** — role-aware dashboards turn raw complaint data into actionable insight: category breakdowns, priority distribution, monthly trends, and recent activity — at a glance.
+>  **Analytics** — role-aware dashboards turn raw complaint data into actionable insight: category breakdowns, priority distribution, monthly trends, and recent activity — at a glance.
 
 Requirements:
 
 <details open>
-<summary><strong>🔐 Authentication</strong></summary>
+<summary><strong> Authentication</strong></summary>
 
 <br />
 
@@ -90,7 +90,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>📝 Complaint Management</strong></summary>
+<summary><strong> Complaint Management</strong></summary>
 
 <br />
 
@@ -131,7 +131,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>🔔 Notifications</strong></summary>
+<summary><strong> Notifications</strong></summary>
 
 <br />
 
@@ -146,7 +146,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>📢 Notice Board</strong></summary>
+<summary><strong> Notice Board</strong></summary>
 
 <br />
 
@@ -161,7 +161,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>📈 Analytics</strong></summary>
+<summary><strong> Analytics</strong></summary>
 
 <br />
 
@@ -194,7 +194,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>🧾 Audit Logs</strong></summary>
+<summary><strong> Audit Logs</strong></summary>
 
 <br />
 
@@ -208,7 +208,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>⏰ Overdue Detection</strong></summary>
+<summary><strong> Overdue Detection</strong></summary>
 
 <br />
 
@@ -222,7 +222,7 @@ Requirements:
 </details>
 
 <details open>
-<summary><strong>🎨 UI / UX</strong></summary>
+<summary><strong> UI / UX</strong></summary>
 
 <br />
 
@@ -244,14 +244,14 @@ Requirements:
 ```
 society-maintenance-tracker/
 ├── apps/
-│   ├── backend/                     🚀 Express + TypeScript API
+│   ├── backend/                      Express + TypeScript API
 │   │   ├── prisma/
-│   │   │   ├── schema.prisma        📐 Database schema
-│   │   │   └── seed.ts              🌱 Seed script
+│   │   │   ├── schema.prisma         Database schema
+│   │   │   └── seed.ts               Seed script
 │   │   └── src/
-│   │       ├── config/              ⚙️  env, db, cloudinary, logger
-│   │       ├── middlewares/         🛡️  auth, roles, validation, rate-limit, errors, upload
-│   │       ├── modules/             📦 feature modules
+│   │       ├── config/                env, db, cloudinary, logger
+│   │       ├── middlewares/           auth, roles, validation, rate-limit, errors, upload
+│   │       ├── modules/              feature modules
 │   │       │   └── <module>/        ├─ *.routes.ts
 │   │       │                        ├─ *.controller.ts
 │   │       │                        ├─ *.service.ts
@@ -264,24 +264,24 @@ society-maintenance-tracker/
 │   │       │   ├── dashboard/
 │   │       │   ├── users/
 │   │       │   └── settings/
-│   │       ├── services/            ✉️  email, cloudinary, token services
-│   │       ├── templates/           🎨 HTML email templates
-│   │       ├── jobs/                ⏰ overdue-detection cron
-│   │       ├── utils/               🧰 ApiError, ApiResponse, pagination, audit log
-│   │       ├── routes/              🗺️  root router
+│   │       ├── services/             email, cloudinary, token services
+│   │       ├── templates/            HTML email templates
+│   │       ├── jobs/                 overdue-detection cron
+│   │       ├── utils/                ApiError, ApiResponse, pagination, audit log
+│   │       ├── routes/               root router
 │   │       ├── app.ts
 │   │       └── server.ts
 │   │
-│   └── frontend/                    🎨 Next.js 15 App Router
+│   └── frontend/                     Next.js 15 App Router
 │       └── src/
-│           ├── app/                 🧭 routes — (auth) & (dashboard) route groups
-│           ├── components/          🧩 ui/, layout/, complaints/, notices/, dashboard/, shared/
-│           ├── hooks/                🪝 TanStack Query hooks
-│           ├── lib/                  📚 api client, services, validators, types, utils
-│           └── providers/            🌗 theme, query, auth providers
+│           ├── app/                  routes — (auth) & (dashboard) route groups
+│           ├── components/           ui/, layout/, complaints/, notices/, dashboard/, shared/
+│           ├── hooks/                 TanStack Query hooks
+│           ├── lib/                   api client, services, validators, types, utils
+│           └── providers/             theme, query, auth providers
 │
-├── docs/                             📖 API docs, ER diagram, architecture, deployment, system design
-├── package.json                      📦 npm workspaces root
+├── docs/                              API docs, ER diagram, architecture, deployment, system design
+├── package.json                       npm workspaces root
 └── .gitignore
 ```
 
@@ -289,32 +289,32 @@ society-maintenance-tracker/
 
 ---
 
-## 🔄 Complaint Workflow
+##  Complaint Workflow
 
 <div align="center">
 
 ```
-   👤 Resident
+    Resident
       │
       ▼
- 📝 Create Complaint  ──────────────► status: OPEN
+  Create Complaint  ──────────────► status: OPEN
       │
       ▼
- 🔍 Admin Review
+  Admin Review
       │
       ▼
- 🏷️  Assigned          ──────────────► priority set · staff assigned
+   Assigned          ──────────────► priority set · staff assigned
       │
       ▼
- 🔧 In Progress        ──────────────► status: IN_PROGRESS
+  In Progress        ──────────────► status: IN_PROGRESS
       │
-      ├──────────────► ⏰ Overdue (if SLA breached — auto-detected)
-      │
-      ▼
- ✅ Resolved           ──────────────► status: RESOLVED · resident notified
+      ├──────────────►  Overdue (if SLA breached — auto-detected)
       │
       ▼
- 🔒 Closed             ──────────────► status: CLOSED
+  Resolved           ──────────────► status: RESOLVED · resident notified
+      │
+      ▼
+  Closed             ──────────────► status: CLOSED
 ```
 
 **Every arrow above is a recorded transition** — old status, new status, timestamp, acting admin, and notes are all written to `ComplaintHistory` and rendered as a beautiful timeline on the complaint detail page.
@@ -322,7 +322,7 @@ society-maintenance-tracker/
 </div>
 
 ---
-## 🚀 Installation
+##  Installation
 =======
 - Next.js
 - React
@@ -336,7 +336,7 @@ society-maintenance-tracker/
 - Build Status
 - Last Commit
 
-## 🗺️ Roadmap
+##  Roadmap
 
 > Planned enhancements for future iterations — not yet implemented.
 
@@ -352,13 +352,13 @@ society-maintenance-tracker/
 
 ---
 
-## 💡 Why this project?
+##  Why this project?
 
 Society Maintenance Tracker was built to demonstrate what a genuinely production-grade, full-stack SaaS application looks like — not a tutorial project, but a system engineered the way real teams ship software. It showcases a normalized relational schema with proper indexing and referential integrity, a layered backend architecture (controllers → services → repositories) with centralized error handling and structured logging, and a modern frontend built on server-aware data fetching, optimistic UX, and accessible, responsive design. Security, validation, automation (overdue detection via cron), and observability (audit logs, email logs) were treated as first-class concerns rather than afterthoughts. Whether you're evaluating this as a portfolio piece, a learning reference, or a starting point for a real deployment, every layer — database, API, UI, and DevOps — was built to the same standard you'd expect from a funded startup's MVP.
 
 ---
 
-## 👤 Author
+##  Author
 
 <div align="center">
 
