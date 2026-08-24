@@ -340,15 +340,15 @@ society-maintenance-tracker/
 
 > Planned enhancements for future iterations — not yet implemented.
 
-- [ ] 🤖 AI Complaint Categorization
-- [ ] 🧠 AI Complaint Summarization
-- [ ] ⚡ Real-time Notifications via WebSockets
-- [ ] 📱 Progressive Web App (PWA) support
-- [ ] 📲 Native Mobile App
-- [ ] 🧾 OCR Bill Scanner
-- [ ] 💬 WhatsApp Notifications
-- [ ] 🚪 Visitor Management
-- [ ] 💳 Maintenance Payments Integration
+- [ ]  AI Complaint Categorization
+- [ ]  AI Complaint Summarization
+- [ ]  Real-time Notifications via WebSockets
+- [ ]  Progressive Web App (PWA) support
+- [ ]  Native Mobile App
+- [ ]  OCR Bill Scanner
+- [ ]  WhatsApp Notifications
+- [ ]  Visitor Management
+- [ ]  Maintenance Payments Integration
 
 ---
 
